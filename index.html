@@ -1,0 +1,196 @@
+<style>
+    body {
+      margin: 0;
+    }
+    
+    #navbar {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      background: deepskyblue;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+    }
+    
+    #navbar a:hover {
+      background: #00abe5;
+    }
+    
+    main {
+      display: grid;
+      grid-template-rows: 100vh auto 300px 100px;
+    }
+    
+    #welcome-section {
+      text-align: center;
+      background: lightgrey;
+      padding-top: 45vh;
+    }
+    
+    #projects {
+      text-align: center;
+      background: white;
+    }
+    
+    #profile {
+      text-align: center;
+      background: lightgrey;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    
+    .circle {
+      background: grey;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+    }
+    
+    #profile-link {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+    
+    #copyright {
+      text-align: center;
+      background: deepskyblue;
+      padding: 1em;
+    }
+    
+    .tiles {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+    }
+    
+    .project-tile {
+      background: white;
+      padding: 2em;
+    }
+    
+    .project-tile a {
+      text-decoration: none;
+      color: grey;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    @media all and (max-width: 800px) {
+      #navbar {
+        justify-content: space-around;
+      }
+    
+      .tiles {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    <style>
+    @media all and (max-width: 600px) {
+      #navbar {
+        flex-flow: column wrap;
+        padding: 0;
+      }
+    
+      #navbar a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    
+      #navbar a:last-of-type {
+        border-bottom: none;
+      }
+    
+      .tiles {
+        grid-template-columns: 1fr;
+      }
+    }
+    </style>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+    
+    <nav id="navbar">
+      <a href="#welcome-section">Contact</a>
+      <a href="#projects">Work</a>
+      <a href="#profile-link">About</a>
+    </nav>
+    
+    <main>
+    
+      <section id="welcome-section">
+        <h1>Hey I am Fred Camp,</h1>
+        <p>a fullstack developer.</p>
+        <p>Currently updating my knowledge on the great FreeCodeCamp website</p>
+      </section>
+    
+      <section id="projects">
+    
+        <h1>These are some of my projects.</h1>
+        <a href="https://codepen.io/frcodecamp" target="_blank">Show all</a>
+    
+        <div class="tiles">
+          <div class="project-tile">
+            <a href="https://codepen.io/frcodecamp/full/QxweeG" target="_blank">
+            <img src="https://codepen.io/frcodecamp/pen/QxweeG/image/small.png" alt="freeCodeCamp : Build a Tribute Page" class="responsive">
+            <div>freeCodeCamp : Build a Tribute Page</div>
+            </a>
+          </div>
+    
+          <div class="project-tile">
+            <a href="https://codepen.io/frcodecamp/full/LrbzpV" target="_blank">
+            <img src="https://codepen.io/frcodecamp/pen/LrbzpV/image/small.png" alt="freeCodeCamp : Build a Technical Documentation Page" class="responsive">
+            <div>freeCodeCamp : Build a Technical Documentation Page</div>
+            </a>
+          </div>
+    
+          <div class="project-tile">
+            <a href="https://codepen.io/frcodecamp/full/LrVPgP" target="_blank">
+            <img src="https://codepen.io/frcodecamp/pen/LrVPgP/image/small.png" alt="freeCodeCamp : Build a Survey Form" class="responsive">
+            <div>freeCodeCamp : Build a Survey Form</div>
+            </a>
+          </div>
+    
+          <div class="project-tile">
+            <a href="https://codepen.io/frcodecamp/full/ZROoPN" target="_blank">
+            <img src="https://codepen.io/frcodecamp/pen/ZROoPN/image/small.png" alt="freeCodeCamp : Build a Product Landing Page" class="responsive">
+            <div>freeCodeCamp : Build a Product Landing Page</div>
+            </a>
+          </div>
+    
+          <div>
+      </section>
+    
+      <section id="profile">
+        <h1>Let's work together...</h1>
+        <p>Currently looking for a job in Germany</p>
+        <div class="circle">
+          <a id="profile-link" href="https://www.freecodecamp.org/frcodecamp" target="_blank">FCC</a>
+        </div>
+      </section>
+    
+      <section id="copyright">
+        <h1>&copy; 2018 Fred Camp</h1>
+      </section>
+    
+    </main>
